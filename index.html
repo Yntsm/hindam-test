@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية خياط هندام</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- إضافة FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papjhfGHsN8k3jC1F+Hj+...== crossorigin=" anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+    <!-- Start Slide Bar Images Ads -->
+    <div class="handam-slider">
+        <div class="slides">
+            <div class="slide active"><img src="images/hin.jpg" alt="إعلان 1"></div>
+            <div class="slide"><img src="images/des.webp" alt="إعلان 2"></div>
+            <div class="slide"><img src="images/des.webp" alt="إعلان 3"></div>
+        </div>
+
+        <!-- أزرار -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        <!-- النقاط -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <!-- End Slide Bar Images Ads -->
+
+    <!-- Start Products -->
+    <!-- منتجات: دشداشات (HTML + JS) -->
+    <section class="handam-products" aria-label="منتجات الدشداشات" dir="rtl">
+        <div class="hp-container">
+            <div class="hp-header">
+                <h2>الدشداشات</h2>
+                <div class="hp-controls">
+                    <button class="hp-arrow hp-prev" aria-label="السابق" title="السابق">
+                        <!-- chevron -->
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+                            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </button>
+                    <button class="hp-arrow hp-next" aria-label="التالي" title="التالي">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+                            <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hp-track-wrapper">
+                <div class="hp-track" id="hpTrack">
+                    <!-- بطاقة منتج (كرر ما تريد) -->
+                    <article class="hp-card">
+                        <div class="hp-media">
+                            <img data-src="images/des.webp" src="images/des.webp" alt="دشداشة 1" class="hp-img" loading="lazy">
+                            <div class="hp-badge">جديد</div>
+                            <div class="hp-actions">
+                                <button class="icon-btn wish" title="إضافة للمفضلة" aria-label="مفضلة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M12 21s-7-4.35-9-7.1C-0.2 10.92 2.4 6.5 6 6.5 8 6.5 9.2 7.6 10 8.5c.8-.9 2-2 4-2 3.6 0 6.2 4.42 3 7.4-2 2.1-9 7.1-9 7.1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                </button>
+                                <button class="icon-btn cart" title="أضف للسلة" aria-label="سلة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M6 6h15l-1.5 9h-11z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                        <circle cx="10" cy="20" r="1" fill="currentColor" />
+                                        <circle cx="18" cy="20" r="1" fill="currentColor" /></svg>
+                                </button>
+                                <button class="icon-btn quick" title="النظر السريع" aria-label="نظرة سريعة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.4" fill="none" /></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="hp-body">
+                            <h3 class="hp-title">دشداشة كلاسيك</h3>
+                            <div class="hp-price">
+                                <span class="price-now">69 ر.س</span>
+                                <span class="price-old">135 ر.س</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- copy x more cards -->
+                    <article class="hp-card">
+                        <div class="hp-media">
+                            <img data-src="images/des.webp" src="images/des.webp" alt="دشداشة 2" class="hp-img" loading="lazy">
+                            <div class="hp-badge">مميز</div>
+                            <div class="hp-actions">
+                                <button class="icon-btn wish" title="إضافة للمفضلة" aria-label="مفضلة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M12 21s-7-4.35-9-7.1C-0.2 10.92 2.4 6.5 6 6.5 8 6.5 9.2 7.6 10 8.5c.8-.9 2-2 4-2 3.6 0 6.2 4.42 3 7.4-2 2.1-9 7.1-9 7.1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                </button>
+                                <button class="icon-btn cart" title="أضف للسلة" aria-label="سلة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M6 6h15l-1.5 9h-11z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                        <circle cx="10" cy="20" r="1" fill="currentColor" />
+                                        <circle cx="18" cy="20" r="1" fill="currentColor" /></svg>
+                                </button>
+                                <button class="icon-btn quick" title="النظر السريع" aria-label="نظرة سريعة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.4" fill="none" /></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="hp-body">
+                            <h3 class="hp-title">دشداشة سمارت</h3>
+                            <div class="hp-price">
+                                <span class="price-now">89 ر.س</span>
+                                <span class="price-old">150 ر.س</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="hp-card">
+                        <div class="hp-media">
+                            <img data-src="images/des.webp" src="images/des.webp" alt="دشداشة 3" class="hp-img" loading="lazy">
+                            <div class="hp-badge">عرض</div>
+                            <div class="hp-actions">
+                                <button class="icon-btn wish" title="إضافة للمفضلة" aria-label="مفضلة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M12 21s-7-4.35-9-7.1C-0.2 10.92 2.4 6.5 6 6.5 8 6.5 9.2 7.6 10 8.5c.8-.9 2-2 4-2 3.6 0 6.2 4.42 3 7.4-2 2.1-9 7.1-9 7.1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                </button>
+                                <button class="icon-btn cart" title="أضف للسلة" aria-label="سلة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M6 6h15l-1.5 9h-11z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                        <circle cx="10" cy="20" r="1" fill="currentColor" />
+                                        <circle cx="18" cy="20" r="1" fill="currentColor" /></svg>
+                                </button>
+                                <button class="icon-btn quick" title="النظر السريع" aria-label="نظرة سريعة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.4" fill="none" /></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="hp-body">
+                            <h3 class="hp-title">دشداشة صوفية</h3>
+                            <div class="hp-price">
+                                <span class="price-now">120 ر.س</span>
+                                <span class="price-old">220 ر.س</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- أعد تكرار البطاقات حسب الحاجة لتفعيل التمرير -->
+                    <article class="hp-card">
+                        <div class="hp-media">
+                            <img data-src="images/des.webp" src="images/des.webp" alt="دشداشة 4" class="hp-img" loading="lazy">
+                            <div class="hp-badge">محدود</div>
+                            <div class="hp-actions">
+                                <button class="icon-btn wish" title="إضافة للمفضلة" aria-label="مفضلة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M12 21s-7-4.35-9-7.1C-0.2 10.92 2.4 6.5 6 6.5 8 6.5 9.2 7.6 10 8.5c.8-.9 2-2 4-2 3.6 0 6.2 4.42 3 7.4-2 2.1-9 7.1-9 7.1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                </button>
+                                <button class="icon-btn cart" title="أضف للسلة" aria-label="سلة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M6 6h15l-1.5 9h-11z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                        <circle cx="10" cy="20" r="1" fill="currentColor" />
+                                        <circle cx="18" cy="20" r="1" fill="currentColor" /></svg>
+                                </button>
+                                <button class="icon-btn quick" title="النظر السريع" aria-label="نظرة سريعة">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.4" fill="none" /></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="hp-body">
+                            <h3 class="hp-title">دشداشة شبابية</h3>
+                            <div class="hp-price">
+                                <span class="price-now">59 ر.س</span>
+                                <span class="price-old">99 ر.س</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- مودال نظرة سريعة -->
+        <div class="hp-quickview" id="hpQuickView" aria-hidden="true">
+            <div class="qv-card">
+                <button class="qv-close" aria-label="إغلاق">&times;</button>
+                <div class="qv-media">
+                    <img src="des.webp" alt="preview" id="qvImg">
+                </div>
+                <div class="qv-info">
+                    <h3 id="qvTitle">عنوان المنتج</h3>
+                    <div class="hp-price">
+                        <span class="price-now" id="qvNow">0 ر.س</span>
+                        <span class="price-old" id="qvOld">0 ر.س</span>
+                    </div>
+                    <p id="qvDesc" class="muted">وصف سريع للمنتج سيظهر هنا.</p>
+                    <div style="margin-top:12px"><button class="btn primary">أضف للسلة</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Products -->
+
+
+
+
+
+    <!-- Start Hindam Gallery -->
+    <div class="gallery-container">
+        <section class="handam-gallery">
+            <h2>معرض أعمال هندام</h2>
+            <p>شوفوا أحدث تصاميم الدشداشات الرجالية عندنا، على كيفكم وعلى ذوقكم 😎</p>
+            <div class="gallery-wrapper">
+                <div class="gallery-card">
+                    <img src="images/des.webp" alt="دشداشة 1">
+                    <div class="gallery-overlay">دشداشة كلاسيك</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/des.webp" alt="دشداشة 2">
+                    <div class="gallery-overlay">دشداشة سمارت</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/des.webp" alt="دشداشة 3">
+                    <div class="gallery-overlay">دشداشة صوفية</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/des.webp" alt="دشداشة 4">
+                    <div class="gallery-overlay">دشداشة شبابية</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End Hindam Gallery -->
+
+
+    <!-- Start Features Section -->
+    <section class="handam-features">
+        <div class="features-header">
+            <h2>ليش  تختار هندام؟</h2>
+            <p>جودة على أعلى مستوى، تفاصيل دقيقة، وراحة تناسبك بالضبط 😎</p>
+        </div>
+
+        <div class="features-container">
+
+            <div class="feature-card">
+                <span class="glow"></span>
+                <div class="feature-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h3>متاجرنا</h3>
+                <p>عندنا فرعين يخدمونك بأحسن إتقان وبدقة على كيفك</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="glow"></span>
+                <div class="feature-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <h3>دشداشاتنا</h3>
+                <p>تشكيلة متنوعة لكل الأعمار والمقاسات، على ذوقك وأصلك</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="glow"></span>
+                <div class="feature-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h3>أسعارنا</h3>
+                <p>أسعار تنافسية بدون أي تنازل عن الجودة اللي تعودت عليها</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Features Section -->
+    <!-- Start Testimonials Section -->
+    <div class="testimonials-container">
+        <section class="handam-testimonials">
+            <div class="testimonials-header">
+                <h2>العملاء يقولون</h2>
+                <p>ثقتكم عندنا خيط يربطنا دايمًا ويخلي شغلنا على أصوله 😎</p>
+            </div>
+
+            <div class="testimonials-wrapper">
+
+                <!-- Card -->
+                <div class="testimonial-card">
+                    <div class="avatar">
+                        <img src="images/des.webp" alt="عميل">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="quote">"ثوبي وصل.. كأنه أنا!"</p>
+                        <h3 class="name">أبو فهد</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="testimonial-card">
+                    <div class="avatar">
+                        <img src="images/des.webp" alt="عميل">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="quote">"تفصيل دقيق وخدمة مميزة!"</p>
+                        <h3 class="name">سالم المطيري</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="testimonial-card">
+                    <div class="avatar">
+                        <img src="images/des.webp" alt="عميل">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="quote">"سرعة وأناقة في كل طلب"</p>
+                        <h3 class="name">يوسف العنزي</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!-- End Testimonials Section -->
+
+
+
+    <!-- Start Hindam Smart Services Section -->
+    <section class="handam-services">
+
+        <div class="services-header">
+            <h2>خدمات هندام الذكية</h2>
+            <p>تفصيل ذكي وسريع، على أصوله وبدقة تناسبك 💼</p>
+        </div>
+
+        <div class="services-container">
+            <!-- بطاقة جديدة لقياس VIP -->
+            <div class="service-card" style="border: 2px solid #ffdd57;">
+                <div class="service-icon" style="color: #ffdd57;"><i class="fas fa-user-tie"></i></div>
+                <h3>قياس VIP</h3>
+                <p>نجي لعندك للبيت ونأخذ القياسات بدقة VIP، مع رسوم بسيطة 💼</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-ruler-combined"></i></div>
+                <h3>قياس دقيق</h3>
+                <p>خدمة قياس كاملة لكل المقاسات بدقة ما شاء الله عليها 📏</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-tshirt"></i></div>
+                <h3>أقمشة متنوعة</h3>
+                <p>تشكيلة واسعة من الأقمشة العالية الجودة تناسب كل الأذواق 👔</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-truck"></i></div>
+                <h3>تسليم سريع</h3>
+                <p>منتجك يوصل لك بأسرع وقت، وضمان الجودة على كيفك 🚚</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-laptop"></i></div>
+                <h3>خدمة إلكترونية</h3>
+                <p>حجز ومتابعة طلبك بسهولة عن طريق موقع هندام، كله على راحتك 💻</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-scissors"></i></div>
+                <h3>تعديل حسب الطلب</h3>
+                <p>تعديل المنتج على كيفك وبدون أي رسوم إضافية ✂️</p>
+            </div>
+
+            <!-- بطاقة جديدة: خدمة تنقيع الخام -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-water"></i></div>
+                <h3>خدمة تنقيع الخام</h3>
+                <p>ننقع الخامة قبل التفصيل عشان ترفع الجودة ونزيل أي شوائب — خدمة محترفة لأفضل نتيجة 💧</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- End Hindam Smart Services Section -->
+    <!-- Start Pricing Section -->
+    <section class="handam-pricing">
+        <div class="pricing-container">
+            <h2 class="pricing-title">أسعارنا</h2>
+            <div class="pricing-cards">
+
+                <div class="pricing-card featured">
+                    <div class="card-header">
+                        <i class="fas fa-tshirt"></i> <!-- أيقونة -->
+                        <span class="service">تفصال كويتي عادي</span>
+                    </div>
+                    <p class="price">8.5 دك</p>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <i class="fas fa-tshirt"></i>
+                        <span class="service">تفصال كويتي قلّابي أو سحاب</span>
+                    </div>
+                    <p class="price">10.5 دك</p>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <i class="fas fa-home"></i>
+                        <span class="service">خدمة الزيارة المنزلية</span>
+                    </div>
+                    <p class="price">10 دك</p>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <i class="fas fa-cut"></i>
+                        <span class="service">خدمة تقييع الخام</span>
+                    </div>
+                    <p class="price">0.5 دك</p>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <i class="fas fa-truck"></i>
+                        <span class="service">خدمة توصيل</span>
+                    </div>
+                    <p class="price">2.5 دك</p>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="card-header">
+                        <i class="fas fa-bolt"></i>
+                        <span class="service">خدمة تفصال سريع</span>
+                    </div>
+                    <p class="price">12.5 دك</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Pricing Section -->
+
+    <!-- Start About -->
+    <section class="about-section">
+        <div class="about-container">
+            <!-- الشعار -->
+            <div class="logo-wrapper">
+                <img src="images/logopost.png" alt="Handam Logo" class="logo" />
+            </div>
+
+            <!-- النصوص -->
+            <div class="about-text">
+                <h2 class="about-heading">هندام</h2>
+                <p class="about-subtitle">من نحن:-</p>
+                <p class="about-description">
+                    هندام.. علامة كويتية متخصصة في بيع أقمشة وخياطة الدشداشة الرجالية منذ عام 2019. نؤمن بأن الأناقة تبدأ من التفاصيل، لذلك نوفر تجربة متكاملة تشمل خدمة قياس دقيقة، تشكيلة مميزة من الأقمشة، وتصاميم تلائم ذوق الرجل الخليجي العصري، بخطى ثابتة نحو المستقبل، ندمج بين الحرفية التقليدية والتقنية، لنقدّم تجربة تفصيل ذكية في فروعنا وخدماتنا الإلكترونية.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Start Vision & Mission Section -->
+    <section class="handam-vision">
+        <div class="vision-container">
+            <h2 class="section-title">رؤيتنا ورسالتنا وقيمنا</h2>
+
+            <div class="vision-cards">
+
+                <div class="vision-card">
+                    <div class="icon-circle"><i class="fas fa-eye"></i></div>
+                    <h3>رؤيتنا</h3>
+                    <p style="text-align: center;">أن نحقق المركز الأول في الكويت بدقّة القياس وجودة التفصيل بأكبر قاعدة عملاء عبر نظام تقني مبتكر وفريق يعمل على تطوير هذه الصناعة ليبقى هندام العلامة الفارقة والرائدة في عالم التفصيل الرجالي في الكويت، والأكثر انتشارًا وتميّزًا في الخليج العربي.</p>
+                </div>
+
+                <div class="vision-card">
+                    <div class="icon-circle"><i class="fas fa-bullseye"></i></div>
+                    <h3>رسالتنا</h3>
+                    <p style="text-align: center;">نؤمن أن الدشداشة انعكاس لشخصيتك وحضورك. لذلك نتقن فن القياس والتفصيل وفق أعلى معايير الجودة، وملتزمون بالشفافية في التعامل، لنمنح عملاءنا تجربة خياطة استثنائية تُبنى على الثقة قبل الأناقة.</p>
+                </div>
+
+                <div class="vision-card">
+                    <div class="icon-circle"><i class="fas fa-gem"></i></div>
+                    <h3>قيمنا</h3>
+                    <ul style="text-align: center;">
+                        <li><strong>الجودة المتناهية:</strong> دقة في التفاصيل وإتقان في كل لمسة</li>
+                        <li><strong>السعر العادل:</strong> قيمة حقيقية توازن بين الجودة والالتزام.</li>
+                        <li><strong>الوضوح والشفافية:</strong> صراحة في التعامل وثقة متبادلة</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="vision-footer">
+                <p>لذلك كله نقول: <span class="highlight">هندام.. مو بس خياط</span></p>
+            </div>
+        </div>
+    </section>
+    <!-- End Vision & Mission Section -->
+
+    <!-- Start Contact & Branches Section -->
+    <section class="handam-contact">
+        <div class="contact-container">
+
+            <div class="contact-left">
+                <h2>أماكن فروع هندام</h2>
+                <div class="branches">
+                    <div class="branch-card">
+                        <h3>الفرع 1: العارضية الحرفية (سكوير بارك)</h3>
+                        <p><a href="https://maps.app.goo.gl/nbFfQeADuDgRkMW49" target="_blank">رابط الموقع على Google Maps</a></p>
+                    </div>
+                    <div class="branch-card">
+                        <h3>الفرع 2: أسواق القرين، شارع معرض العايش، مقابل أسواق السعيدة</h3>
+                        <p><a href="https://maps.app.goo.gl/cnUHddnh9zYbA3s6A" target="_blank">رابط الموقع على Google Maps</a></p>
+                    </div>
+                </div>
+
+                <!-- Map Embed: Switch بين الفرعين باستخدام Tabs بسيطة -->
+                <div class="map-tabs">
+                    <button onclick="showMap('branch1')">الفرع 1</button>
+                    <button onclick="showMap('branch2')">الفرع 2</button>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe id="branch1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.5408581049956!2d47.909627799999996!3d29.295806499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf914ce777f013%3A0x4ce6eb1e17d7ad85!2z2K7Zitin2Lcg2YfZhtiv2KfZhQ!5e0!3m2!1sar!2s!4v1761478218694!5m2!1sar!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe id="branch2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.8911033608274!2d48.049910999999994!3d29.197332799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcfa1003eab5b89%3A0xcfd9e5b0cfa3bfa6!2z2K7Zitin2Lcg2YfZhtiv2KfZhSBf2KfYs9mI2KfZgiDYp9mE2YLYsdmK2YY!5e0!3m2!1sar!2s!4v1761478273569!5m2!1sar!2s" width="100%" height="300" style="border:0; display:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <script>
+                function showMap(branch) {
+                    document.getElementById('branch1').style.display = 'none';
+                    document.getElementById('branch2').style.display = 'none';
+                    document.getElementById(branch).style.display = 'block';
+                }
+            </script>
+
+            <!--  Start Right Column: Contact Form & Socials -->
+            <div class="contact-right">
+                <h2>تواصل معنا</h2>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="الاسم الكامل" required>
+                    <input maxlength="8" type="tel" name="phone" style="text-align: right;" placeholder="رقم الجوال (مثال: 965xxxxxxxx)" pattern="965[0-9]{8}" required>
+                    <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                    <select name="topic" required>
+                        <option value="" disabled selected>نوع الاستفسار</option>
+                        <option value="قياس">خدمة قياس</option>
+                        <option value="طلب">طلب منتج</option>
+                        <option value="شكوى">شكوى</option>
+                        <option value="استفسار">استفسار عام</option>
+                    </select>
+                    <textarea name="message" rows="5" placeholder="رسالتك" required></textarea>
+                    <button type="submit" class="btn-submit">إرسال</button>
+                </form>
+
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="https://api.whatsapp.com/send/?phone=96522284055&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/hindam.kw/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@hindam_kw" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Right Column: Contact Form & Socials -->
+
+
+
+
+    <!-- START: Scroll to Top Button -->
+    <div id="scroll-to-top">
+        <svg width="60" height="60">
+            <circle cx="30" cy="30" r="28" stroke="#a22125" stroke-width="4" fill="none" stroke-dasharray="175" stroke-dashoffset="175" />
+        </svg>
+        <div class="arrow">⬆</div>
+    </div>
+    <!-- End: Scroll to Top Button -->
+
+
+
+    <!-- START: Floating Share & Support Button -->
+    <div id="share-support-btn">
+        <button id="ss-toggle">💡 الدعم والمشاركة</button>
+
+        <div id="ss-window" class="hidden">
+            <div id="ss-header">خيارات الدعم والمشاركة <button id="ss-close">✖</button></div>
+            <div id="ss-buttons">
+                <!-- نسخ الرابط -->
+                <div class="ss-icon ss-copy" id="copy-link" title="نسخ الرابط">
+                    <i class="fas fa-link"></i>
+                </div>
+
+                <!-- فيسبوك -->
+                <div class="ss-icon ss-facebook" id="share-facebook" title="فيسبوك">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <!-- إنستاجرام -->
+                <div class="ss-icon ss-instagram" id="share-instagram" title="إنستاجرام">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <!-- واتساب الدعم -->
+                <a class="ss-icon ss-whatsapp" href="https://api.whatsapp.com/send/?phone=96522284055" target="_blank" title="تواصل واتساب">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- End: Floating Share & Support Button -->
+
+
+    <!-- Start Footer -->
+    <footer class="handam-footer">
+        <div class="footer-container">
+          <!-- شعار هندام -->
+          <div class="footer-logo">
+            <h2>هندام</h2>
+            <p>مو بس خياط</p>
+          </div>
+      
+          <!-- روابط سريعة -->
+          <div class="footer-links">
+            <h3>روابط سريعة</h3>
+            <ul>
+              <li><a href="#about">من نحن</a></li>
+              <li><a href="#services">خدماتنا</a></li>
+              <li><a href="#pricing">أسعارنا</a></li>
+              <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+          </div>
+      
+          <!-- التواصل -->
+          <div class="footer-contact">
+            <h3>تواصل معنا</h3>
+            <p>واتساب: <a href="https://wa.me/96522284055" target="_blank">96522284055</a></p>
+            <p>البريد: <a href="mailto:info@handam.com">info@handam.com</a></p>
+          </div>
+      
+          <!-- الشبكات الاجتماعية -->
+          <div class="footer-social">
+            <h3>تابعنا</h3>
+            <div class="social-icons">
+              <a style="text-decoration: none;" href="#" class="social-facebook" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+              <a style="text-decoration: none;" href="#" class="social-instagram" title="إنستاجرام"><i class="fab fa-instagram"></i></a>
+              <a style="text-decoration: none;" href="#" class="social-whatsapp" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- الفقرة السفلية -->
+        <div class="footer-bottom">
+          <p>© 2025 هندام - جميع الحقوق محفوظة</p>
+          <p class="footer-dev">
+            <a href="https://wa.me/967774502826" target="_blank">تطوير وبرمجة YWD</a>
+          </p>
+        </div>
+      </footer>
+    <!-- End Footer -->
+
+    <!-- إضافة FontAwesome للأيقونات -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
